@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40BC4C9F264066DA00E84168 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BC4C9E264066DA00E84168 /* main.m */; };
+		40BC4CAA2640674C00E84168 /* RSPassenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BC4CA92640674C00E84168 /* RSPassenger.m */; };
+		40BC4CB02640698800E84168 /* RSVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BC4CAF2640698800E84168 /* RSVehicle.m */; };
+		40BC4CB526406BBC00E84168 /* RSCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BC4CB426406BBC00E84168 /* RSCar.m */; };
+		40BC4CBF26406C4A00E84168 /* RSCarPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BC4CBE26406C4A00E84168 /* RSCarPort.m */; };
+		40BC4CD22640731E00E84168 /* RSPassenger+RandomGeneratable.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BC4CD12640731E00E84168 /* RSPassenger+RandomGeneratable.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40BC4C99264066DA00E84168 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		40BC4C9B264066DA00E84168 /* Demo 3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Demo 3"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40BC4C9E264066DA00E84168 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40BC4CA82640674C00E84168 /* RSPassenger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSPassenger.h; sourceTree = "<group>"; };
+		40BC4CA92640674C00E84168 /* RSPassenger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSPassenger.m; sourceTree = "<group>"; };
+		40BC4CAE2640698800E84168 /* RSVehicle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSVehicle.h; sourceTree = "<group>"; };
+		40BC4CAF2640698800E84168 /* RSVehicle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSVehicle.m; sourceTree = "<group>"; };
+		40BC4CB326406BBC00E84168 /* RSCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSCar.h; sourceTree = "<group>"; };
+		40BC4CB426406BBC00E84168 /* RSCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSCar.m; sourceTree = "<group>"; };
+		40BC4CBD26406C4A00E84168 /* RSCarPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSCarPort.h; sourceTree = "<group>"; };
+		40BC4CBE26406C4A00E84168 /* RSCarPort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSCarPort.m; sourceTree = "<group>"; };
+		40BC4CC626406EFF00E84168 /* RSEnterable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSEnterable.h; sourceTree = "<group>"; };
+		40BC4CD02640731E00E84168 /* RSPassenger+RandomGeneratable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSPassenger+RandomGeneratable.h"; sourceTree = "<group>"; };
+		40BC4CD12640731E00E84168 /* RSPassenger+RandomGeneratable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RSPassenger+RandomGeneratable.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40BC4C98264066DA00E84168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40BC4C92264066DA00E84168 = {
+			isa = PBXGroup;
+			children = (
+				40BC4C9D264066DA00E84168 /* Demo 3 */,
+				40BC4C9C264066DA00E84168 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40BC4C9C264066DA00E84168 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40BC4C9B264066DA00E84168 /* Demo 3 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40BC4C9D264066DA00E84168 /* Demo 3 */ = {
+			isa = PBXGroup;
+			children = (
+				40BC4CA62640672000E84168 /* Model */,
+				40BC4C9E264066DA00E84168 /* main.m */,
+			);
+			path = "Demo 3";
+			sourceTree = "<group>";
+		};
+		40BC4CA62640672000E84168 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40BC4CBB26406C3100E84168 /* Port */,
+				40BC4CAD2640696700E84168 /* Vehicle */,
+				40BC4CA72640673000E84168 /* Passenger */,
+				40BC4CB726406BC700E84168 /* Car */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40BC4CA72640673000E84168 /* Passenger */ = {
+			isa = PBXGroup;
+			children = (
+				40BC4CC82640729300E84168 /* Category */,
+				40BC4CA82640674C00E84168 /* RSPassenger.h */,
+				40BC4CA92640674C00E84168 /* RSPassenger.m */,
+			);
+			path = Passenger;
+			sourceTree = "<group>";
+		};
+		40BC4CAD2640696700E84168 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				40BC4CAE2640698800E84168 /* RSVehicle.h */,
+				40BC4CAF2640698800E84168 /* RSVehicle.m */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		40BC4CB726406BC700E84168 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				40BC4CB326406BBC00E84168 /* RSCar.h */,
+				40BC4CB426406BBC00E84168 /* RSCar.m */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		40BC4CBB26406C3100E84168 /* Port */ = {
+			isa = PBXGroup;
+			children = (
+				40BC4CBC26406C3800E84168 /* CarPort */,
+			);
+			path = Port;
+			sourceTree = "<group>";
+		};
+		40BC4CBC26406C3800E84168 /* CarPort */ = {
+			isa = PBXGroup;
+			children = (
+				40BC4CBD26406C4A00E84168 /* RSCarPort.h */,
+				40BC4CBE26406C4A00E84168 /* RSCarPort.m */,
+				40BC4CC626406EFF00E84168 /* RSEnterable.h */,
+			);
+			path = CarPort;
+			sourceTree = "<group>";
+		};
+		40BC4CC82640729300E84168 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				40BC4CD02640731E00E84168 /* RSPassenger+RandomGeneratable.h */,
+				40BC4CD12640731E00E84168 /* RSPassenger+RandomGeneratable.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40BC4C9A264066DA00E84168 /* Demo 3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40BC4CA2264066DA00E84168 /* Build configuration list for PBXNativeTarget "Demo 3" */;
+			buildPhases = (
+				40BC4C97264066DA00E84168 /* Sources */,
+				40BC4C98264066DA00E84168 /* Frameworks */,
+				40BC4C99264066DA00E84168 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo 3";
+			productName = "Demo 3";
+			productReference = 40BC4C9B264066DA00E84168 /* Demo 3 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40BC4C93264066DA00E84168 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					40BC4C9A264066DA00E84168 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 40BC4C96264066DA00E84168 /* Build configuration list for PBXProject "Demo 3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40BC4C92264066DA00E84168;
+			productRefGroup = 40BC4C9C264066DA00E84168 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40BC4C9A264066DA00E84168 /* Demo 3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40BC4C97264066DA00E84168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BC4CBF26406C4A00E84168 /* RSCarPort.m in Sources */,
+				40BC4CD22640731E00E84168 /* RSPassenger+RandomGeneratable.m in Sources */,
+				40BC4C9F264066DA00E84168 /* main.m in Sources */,
+				40BC4CAA2640674C00E84168 /* RSPassenger.m in Sources */,
+				40BC4CB526406BBC00E84168 /* RSCar.m in Sources */,
+				40BC4CB02640698800E84168 /* RSVehicle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		40BC4CA0264066DA00E84168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		40BC4CA1264066DA00E84168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		40BC4CA3264066DA00E84168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y322LSDU5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		40BC4CA4264066DA00E84168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Y322LSDU5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40BC4C96264066DA00E84168 /* Build configuration list for PBXProject "Demo 3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40BC4CA0264066DA00E84168 /* Debug */,
+				40BC4CA1264066DA00E84168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40BC4CA2264066DA00E84168 /* Build configuration list for PBXNativeTarget "Demo 3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40BC4CA3264066DA00E84168 /* Debug */,
+				40BC4CA4264066DA00E84168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40BC4C93264066DA00E84168 /* Project object */;
+}
