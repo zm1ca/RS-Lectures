@@ -19,6 +19,7 @@
 
 - (instancetype)initWithSides:(float)a :(float)b :(float)c {
     self = [super init];
+    // FIXME: insufficient validation
     if (a < 0 || b < 0 || c < 0 || a >= b + c) {
         return nil;
     }
@@ -52,7 +53,7 @@
 
 - (float)area {
     float p = (self.a + self.b + self.c) / 2;
-    return sqrt(p * (p - self.a) * (p - self.b) * (p - self.c));
+    return sqrtf(p * (p - self.a) * (p - self.b) * (p - self.c));
 }
 
 - (float)perimeter {

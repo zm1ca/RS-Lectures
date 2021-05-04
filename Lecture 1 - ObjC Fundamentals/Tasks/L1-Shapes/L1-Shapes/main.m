@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
         RSRectangle *rect = [[RSRectangle alloc] initWithSides:2 :5];
         NSLog(@"Rectangle Area is %f, Perimeter is %f", [rect area], [rect perimeter]);
         
-        RSTriangle *trian = [[RSTriangle alloc] initWithSides:2 :5 :3];
+        RSTriangle *trian = [[RSTriangle alloc] initWithSides:2 :3 :4];
         NSLog(@"Triangle: Area is %f, Perimeter is %f", [trian area], [trian perimeter]);
     }
     return 0;

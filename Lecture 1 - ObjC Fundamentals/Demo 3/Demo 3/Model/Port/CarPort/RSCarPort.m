@@ -21,6 +21,7 @@
     self = [super init];
     if (self) {
         _trackPool = [NSMutableArray new];
+        //enter pool?
     }
     return self;
 }
