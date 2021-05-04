@@ -6,11 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RSShape.h"
+#import "RSShapeType.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RSRectangle: RSShape
+@interface RSRectangle: NSObject <RSShapeType>
 - (instancetype)initWithSides:(float)a :(float)b;
 + (instancetype)rectangleWithSides: (float)a :(float) b;
 - (BOOL)isEqualToRectangle:(RSRectangle *)other;

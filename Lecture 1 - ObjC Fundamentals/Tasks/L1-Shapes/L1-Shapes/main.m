@@ -13,12 +13,14 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        RSTriangle* obj = [RSTriangle triangleWithSides:1 :3 :4];
-        RSCircle* circ = [RSCircle circleWithRadius:5];
-        RSCircle* circ2 = [RSCircle circleWithRadius:10];
+        RSCircle *circ = [[RSCircle alloc] initWithRadius:1];
+        NSLog(@"Circle Area is %f, Perimeter is %f", [circ area], [circ perimeter]);
         
-        NSLog(@"1 %@", [circ isEqual:obj] ? @"YES" : @"NO");
-        NSLog(@"2 %@", [circ isEqual:circ2] ? @"YES" : @"NO");
+        RSRectangle *rect = [[RSRectangle alloc] initWithSides:2 :5];
+        NSLog(@"Rectangle Area is %f, Perimeter is %f", [rect area], [rect perimeter]);
+        
+        RSTriangle *trian = [[RSTriangle alloc] initWithSides:2 :5 :3];
+        NSLog(@"Triangle: Area is %f, Perimeter is %f", [trian area], [trian perimeter]);
     }
     return 0;
 }

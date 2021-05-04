@@ -7,10 +7,10 @@
 
 #import "RSRectangle.h"
 
-@interface RSRectangle () {
-    float _a;
-    float _b;
-}
+@interface RSRectangle ()
+
+@property float a;
+@property float b;
 
 @end
 
@@ -46,6 +46,14 @@
         return [self isEqualToRectangle:other];
     }
     return false;
+}
+
+- (float)area {
+    return self.a * self.b;
+}
+
+- (float)perimeter {
+    return self.a + self.b;
 }
 
 @end

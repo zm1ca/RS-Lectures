@@ -37,6 +37,7 @@
 		40BD9FE326411E8400A4FBC2 /* RSRectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSRectangle.m; sourceTree = "<group>"; };
 		40BD9FE726411EBC00A4FBC2 /* RSTriangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSTriangle.h; sourceTree = "<group>"; };
 		40BD9FE826411EBC00A4FBC2 /* RSTriangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSTriangle.m; sourceTree = "<group>"; };
+		40BD9FEE26413C1700A4FBC2 /* RSShapeType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSShapeType.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 			children = (
 				40BD9FDA26411E0C00A4FBC2 /* RSShape.h */,
 				40BD9FDB26411E0C00A4FBC2 /* RSShape.m */,
+				40BD9FEE26413C1700A4FBC2 /* RSShapeType.h */,
 			);
 			path = Shape;
 			sourceTree = "<group>";

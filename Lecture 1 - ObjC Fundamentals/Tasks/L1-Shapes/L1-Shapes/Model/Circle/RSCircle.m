@@ -7,9 +7,9 @@
 
 #import "RSCircle.h"
 
-@interface RSCircle () {
-    float _radius;
-}
+@interface RSCircle ()
+
+@property float radius;
 
 @end
 
@@ -46,5 +46,12 @@
     return false;
 }
 
+- (float)area {
+    return 3.14f * self.radius * self.radius;
+}
+
+- (float)perimeter {
+    return 2.0f * 3.14f * self.radius;
+}
 
 @end

@@ -6,11 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RSShape.h"
+#import "RSShapeType.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RSCircle: RSShape
+@interface RSCircle: NSObject <RSShapeType>
 - (instancetype)initWithRadius:(float)radius;
 + (instancetype)circleWithRadius:(float)radius;
 - (BOOL)isEqualToCircle:(RSCircle *)other;

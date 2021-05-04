@@ -7,11 +7,11 @@
 
 #import "RSTriangle.h"
 
-@interface RSTriangle () {
-    float _a;
-    float _b;
-    float _c;
-}
+@interface RSTriangle ()
+
+@property float a;
+@property float b;
+@property float c;
 
 @end
 
@@ -48,6 +48,15 @@
         return [self isEqualToTriangle:other];
     }
     return false;
+}
+
+- (float)area {
+    float p = (self.a + self.b + self.c) / 2;
+    return sqrt(p * (p - self.a) * (p - self.b) * (p - self.c));
+}
+
+- (float)perimeter {
+    return self.a + self.b + self.c;
 }
 
 @end
