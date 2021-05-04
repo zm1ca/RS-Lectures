@@ -19,7 +19,7 @@
 
 - (instancetype)initWithSides:(float)a :(float)b :(float)c {
     self = [super init];
-    if (a < 0 || b < 0 || c < 0 || a < b + c) {
+    if (a < 0 || b < 0 || c < 0 || a >= b + c) {
         return nil;
     }
     if (self) {

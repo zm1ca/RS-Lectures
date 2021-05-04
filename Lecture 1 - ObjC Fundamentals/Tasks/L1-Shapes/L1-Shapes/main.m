@@ -7,16 +7,15 @@
 
 #import <Foundation/Foundation.h>
 #import "RSCircle.h"
+#import "RSRectangle.h"
 #import "RSTriangle.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        RSShape* object = [RSShape new];
-        RSShape* object2 = [RSShape new];
+        RSTriangle* obj = [RSTriangle triangleWithSides:1 :3 :4];
         
-        NSLog(@"%@", [object description]);
-        NSLog(@"%@", [object2 description]);
+        NSLog(@"%@", [obj description]);
     }
     return 0;
 }
