@@ -30,4 +30,21 @@
     return [[RSCircle alloc] initWithRadius:radius];
 }
 
+- (BOOL)isEqualToCircle:(RSCircle *)other {
+    // FIXME: float comparison
+    if (self.area == other.area && self.perimeter == other.perimeter) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+- (BOOL)isEqual:(id)other {
+    if ([other isMemberOfClass:[self class]]) {
+        return [self isEqualToCircle:other];
+    }
+    return false;
+}
+
+
 @end
