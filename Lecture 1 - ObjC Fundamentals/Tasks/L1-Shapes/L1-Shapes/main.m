@@ -6,11 +6,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RSShape.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        RSShape* object = [RSShape new];
+        RSShape* object2 = [RSShape new];
+        
+        NSLog(@"%@", [object description]);
+        NSLog(@"%@", [object2 description]);
     }
     return 0;
 }
