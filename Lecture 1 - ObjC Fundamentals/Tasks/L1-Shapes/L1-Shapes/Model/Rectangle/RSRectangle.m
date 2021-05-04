@@ -18,6 +18,9 @@
 
 - (instancetype)initWithSides:(float)a :(float)b {
     self = [super init];
+    if (a < 0 || b < b) {
+        return nil;
+    }
     if (self) {
         _a = a;
         _b = b;

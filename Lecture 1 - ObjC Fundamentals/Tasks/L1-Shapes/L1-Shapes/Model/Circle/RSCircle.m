@@ -17,7 +17,10 @@
 
 - (instancetype)initWithRadius:(float)radius {
     self = [super init];
-    if (self && radius >= 0) {
+    if (radius < 0) {
+        return nil;
+    }
+    if (self) {
         _radius = radius;
     }
     return self;

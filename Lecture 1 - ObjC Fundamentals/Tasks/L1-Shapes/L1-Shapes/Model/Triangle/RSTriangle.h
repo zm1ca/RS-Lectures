@@ -11,8 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RSTriangle: RSShape
-// provide init with sides, return nil if a >= b + c ????, validate for negative values
-// provide class method for create instance
+- (instancetype)initWithSides:(float)a :(float)b :(float)c;
++ (instancetype)triangleWithSides:(float)a :(float)b :(float)c;
 - (BOOL)isEqualToTriangle:(RSTriangle *)other;
 - (BOOL)isEqual:(id)other;
 @end

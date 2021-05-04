@@ -11,8 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RSCircle: RSShape
-// provide init with radius, validate for negative value
-// provide class method for create instance
+- (instancetype)initWithRadius:(float)radius;
++ (instancetype)circleWithRadius:(float)radius;
 - (BOOL)isEqualToCircle:(RSCircle *)other;
 - (BOOL)isEqual:(id)other;
 @end

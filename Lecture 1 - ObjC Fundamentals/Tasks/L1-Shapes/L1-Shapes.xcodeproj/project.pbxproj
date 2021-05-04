@@ -78,10 +78,10 @@
 		40BD9FD426411DB900A4FBC2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				40BD9FD926411DE100A4FBC2 /* Triangle */,
-				40BD9FD826411DDB00A4FBC2 /* Rectangle */,
-				40BD9FD726411DD800A4FBC2 /* Circle */,
 				40BD9FD526411DBF00A4FBC2 /* Shape */,
+				40BD9FD726411DD800A4FBC2 /* Circle */,
+				40BD9FD826411DDB00A4FBC2 /* Rectangle */,
+				40BD9FD926411DE100A4FBC2 /* Triangle */,
 			);
 			path = Model;
 			sourceTree = "<group>";

@@ -11,8 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RSRectangle: RSShape
-// provide init with sides, validate for negative values
-// provide class method for create instance
+- (instancetype)initWithSides:(float)a :(float)b;
++ (instancetype)rectangleWithSides: (float)a :(float) b;
 - (BOOL)isEqualToRectangle:(RSRectangle *)other;
 - (BOOL)isEqual:(id)other;
 @end

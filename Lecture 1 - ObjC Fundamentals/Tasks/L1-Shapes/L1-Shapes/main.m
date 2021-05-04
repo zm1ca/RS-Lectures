@@ -6,7 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RSShape.h"
+#import "RSCircle.h"
+#import "RSTriangle.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
