@@ -32,20 +32,20 @@
     return [[RSRectangle alloc] initWithSides:a :b];
 }
 
-- (BOOL)isEqualToRectangle:(RSRectangle *)other {
-    // FIXME: float comparison
-    if (self.area == other.area && self.perimeter == other.perimeter) {
-        return true;
-    } else {
-        return false;
+- (BOOL)isEqual:(id)other {
+    if (self == other) {
+        return YES;
     }
+    
+    if (![other isKindOfClass:RSRectangle.class]) {
+        return NO;
+    }
+
+    return [self isEqualToRectangle:other];
 }
 
-- (BOOL)isEqual:(id)other {
-    if ([other isMemberOfClass:[self class]]) {
-        return [self isEqualToRectangle:other];
-    }
-    return false;
+- (BOOL)isEqualToRectangle:(RSRectangle *)other {
+    return self.area == other.area && self.perimeter == other.perimeter;
 }
 
 - (float)area {

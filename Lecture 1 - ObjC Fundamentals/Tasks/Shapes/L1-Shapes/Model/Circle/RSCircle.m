@@ -31,19 +31,19 @@
 }
 
 - (BOOL)isEqualToCircle:(RSCircle *)other {
-    // FIXME: float comparison
-    if (self.area == other.area && self.perimeter == other.perimeter) {
-        return true;
-    } else {
-        return false;
-    }
+    return self.area == other.area && self.perimeter == other.perimeter;
 }
 
 - (BOOL)isEqual:(id)other {
-    if ([other isMemberOfClass:[self class]]) {
-        return [self isEqualToCircle:other];
+    if (self == other) {
+        return YES;
     }
-    return false;
+    
+    if (![other isKindOfClass:RSCircle.class]) {
+        return NO;
+    }
+
+    return [self isEqualToCircle:other];
 }
 
 - (float)area {

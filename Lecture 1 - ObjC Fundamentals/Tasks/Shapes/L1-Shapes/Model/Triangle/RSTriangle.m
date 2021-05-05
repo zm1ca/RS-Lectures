@@ -35,20 +35,20 @@
     return [[RSTriangle alloc] initWithSides:a :b :c];
 }
 
-- (BOOL)isEqualToTriangle:(RSTriangle *)other {
-    // FIXME: float comparison
-    if (self.area == other.area && self.perimeter == other.perimeter) {
-        return true;
-    } else {
-        return false;
+- (BOOL)isEqual:(id)other {
+    if (self == other) {
+        return YES;
     }
+    
+    if (![other isKindOfClass:RSTriangle.class]) {
+        return NO;
+    }
+
+    return [self isEqualToTriangle:other];
 }
 
-- (BOOL)isEqual:(id)other {
-    if ([other isMemberOfClass:[self class]]) {
-        return [self isEqualToTriangle:other];
-    }
-    return false;
+- (BOOL)isEqualToTriangle:(RSTriangle *)other {
+    return self.area == other.area && self.perimeter == other.perimeter;
 }
 
 - (float)area {
