@@ -28,23 +28,7 @@
 }
 
 - (NSUInteger)wordsCount {
-    if ([self isEmpty]) {
-        return 0;
-    }
-    
-    NSUInteger wordsCount = 1;
-    
-    NSUInteger len = [self length];
-    unichar buffer[len + 1];
-    [self getCharacters:buffer range:NSMakeRange(0, len)];
-    
-    for (int i = 0; i < len; ++i) {
-        if (buffer[i] == 10 || buffer[i] == 32) {
-            wordsCount++;
-        }
-    }
-    
-    return wordsCount;
+    return self.length == 0 ? 0 : [self componentsSeparatedByCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet].count;
 }
 
 @end
