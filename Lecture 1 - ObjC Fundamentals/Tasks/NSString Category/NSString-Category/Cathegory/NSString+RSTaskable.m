@@ -10,18 +10,15 @@
 @implementation NSString (RSTaskable)
 
 - (BOOL)isEmpty {
-    return ([self length] == 0);
+    return (self.length == 0);
 }
 
 - (NSString *)reversed {
-    NSUInteger len = [self length];
-    unichar buffer[len + 1];
-    [self getCharacters:buffer range:NSMakeRange(0, len)];
-    
+    NSUInteger len = self.length;
     NSMutableString *reversedSelf = [NSMutableString new];
 
-    for (int i = 0; i < len; ++i) {
-        [reversedSelf appendFormat:@"%C", buffer[len - i - 1]];
+    for (NSUInteger i = 0; i < len; ++i) {
+        [reversedSelf appendFormat:@"%C", [self characterAtIndex:(len - i - 1)]];
     }
     
     return reversedSelf;
