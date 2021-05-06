@@ -72,13 +72,9 @@
             whitespaceCount++;
         }
 
-        NSLog(@"%@", self);
-        NSLog(@"%lu count %lu", whiteSpaceFirstIndex, whitespaceCount);
-
         NSMutableString *mutableSelf = [self mutableCopy];
         [mutableSelf deleteCharactersInRange:NSMakeRange(whiteSpaceFirstIndex + 1, whitespaceCount - 1)];
-        NSString *test = [mutableSelf copy];
-        return [test removeDuplicateSpaces];
+        return [mutableSelf removeDuplicateSpaces];
     } else {
         return self;
     }
