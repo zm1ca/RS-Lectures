@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		406200FA2643E30F001A77BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 406200F92643E30F001A77BB /* main.m */; };
 		406201042643E332001A77BB /* NSString+TaskApprovable.m in Sources */ = {isa = PBXBuildFile; fileRef = 406201032643E332001A77BB /* NSString+TaskApprovable.m */; };
+		4066E835264423C800340DCE /* NSDate+TaskApprovable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4066E834264423C800340DCE /* NSDate+TaskApprovable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		406200F92643E30F001A77BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		406201022643E332001A77BB /* NSString+TaskApprovable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TaskApprovable.h"; sourceTree = "<group>"; };
 		406201032643E332001A77BB /* NSString+TaskApprovable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TaskApprovable.m"; sourceTree = "<group>"; };
+		4066E833264423C800340DCE /* NSDate+TaskApprovable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+TaskApprovable.h"; sourceTree = "<group>"; };
+		4066E834264423C800340DCE /* NSDate+TaskApprovable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TaskApprovable.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 		406200F82643E30F001A77BB /* MixedFoundationTasks */ = {
 			isa = PBXGroup;
 			children = (
+				4066E832264423A100340DCE /* NSDate+TaskApprovable */,
 				406201072643E339001A77BB /* NSString+TaskApprovable */,
 				406200F92643E30F001A77BB /* main.m */,
 			);
@@ -73,6 +77,15 @@
 				406201032643E332001A77BB /* NSString+TaskApprovable.m */,
 			);
 			path = "NSString+TaskApprovable";
+			sourceTree = "<group>";
+		};
+		4066E832264423A100340DCE /* NSDate+TaskApprovable */ = {
+			isa = PBXGroup;
+			children = (
+				4066E833264423C800340DCE /* NSDate+TaskApprovable.h */,
+				4066E834264423C800340DCE /* NSDate+TaskApprovable.m */,
+			);
+			path = "NSDate+TaskApprovable";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4066E835264423C800340DCE /* NSDate+TaskApprovable.m in Sources */,
 				406201042643E332001A77BB /* NSString+TaskApprovable.m in Sources */,
 				406200FA2643E30F001A77BB /* main.m in Sources */,
 			);

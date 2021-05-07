@@ -64,7 +64,10 @@
 }
 
 - (NSString *)removeDuplicateSpacesV2 {
-    if ([self containsString:@"  "]) {
+    NSUInteger whitespaceLocation = [self rangeOfString:@"  "].location;
+    if (whitespaceLocation == NSNotFound) {
+        return self;
+    } else {
         NSUInteger whiteSpaceFirstIndex = [self rangeOfString:@"  "].location;
         NSUInteger whitespaceCount = 1;
 
@@ -75,8 +78,6 @@
         NSMutableString *mutableSelf = [self mutableCopy];
         [mutableSelf deleteCharactersInRange:NSMakeRange(whiteSpaceFirstIndex + 1, whitespaceCount - 1)];
         return [mutableSelf removeDuplicateSpaces];
-    } else {
-        return self;
     }
 }
 

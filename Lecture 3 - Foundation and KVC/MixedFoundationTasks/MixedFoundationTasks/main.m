@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "NSString+TaskApprovable.h"
+#import "NSDate+TaskApprovable.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -81,7 +82,15 @@ int main(int argc, const char * argv[]) {
                                                              encoding:NSUTF8StringEncoding
                                                                 error:&error];
         NSLog(@"Retrieved string is: %@", retrievedSting);
-
+        
+        
+        // MARK: Formatted current date
+        NSLog(@"************** Formatted Current Date **************");
+        [NSDate logCurrentDate];
+        
+        // MARK: Weak day for date
+        NSLog(@"************** Weak Day for Date **************");
+        [NSDate logWeekDayFor:[NSDate new]];
     }
     
     return 0;
