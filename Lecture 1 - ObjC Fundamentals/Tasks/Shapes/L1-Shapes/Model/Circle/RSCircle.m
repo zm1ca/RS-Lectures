@@ -31,7 +31,7 @@
 }
 
 - (BOOL)isEqualToCircle:(RSCircle *)other {
-    return self.area == other.area && self.perimeter == other.perimeter;
+    return (fabsf(self.radius - other.radius) < FLT_EPSILON);
 }
 
 - (BOOL)isEqual:(id)other {

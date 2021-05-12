@@ -45,7 +45,7 @@
 }
 
 - (BOOL)isEqualToRectangle:(RSRectangle *)other {
-    return self.area == other.area && self.perimeter == other.perimeter;
+    return (fabsf(self.a - other.a) < FLT_EPSILON) && (fabsf(self.b - other.b) < FLT_EPSILON);
 }
 
 - (float)area {
