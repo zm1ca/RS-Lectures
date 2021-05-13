@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TreeNode<TreeNodeValueType> : NSObject
 
-@property(nonatomic, assign) TreeNodeValueType value;
+@property(nonatomic, retain) TreeNodeValueType value;
 @property(nonatomic, retain, nullable) TreeNode *leftNode;
 @property(nonatomic, retain, nullable) TreeNode *rightNode;
 

@@ -12,7 +12,7 @@
 - (instancetype)initWithValue:(id)value {
     self = [super init];
     if (self) {
-        _value = value;
+        _value = [value retain];
         _leftNode = nil;
         _rightNode = nil;
     }
@@ -42,6 +42,7 @@
 
 - (void)dealloc
 {
+    [_value release];
     [_leftNode release];
     [_rightNode release];
     [super dealloc];

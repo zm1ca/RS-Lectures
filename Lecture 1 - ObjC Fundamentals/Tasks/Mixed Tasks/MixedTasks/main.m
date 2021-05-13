@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
         
         // MARK: Integer Types Information
         NSLog(@"%lu, %d, %d", sizeof(int), INT_MIN, INT_MAX);
-        //for min/max use limits.h like LLONG_MAX
+        //for min/max use limits.h (go to definition of INT_MIN or INT_MAX above) like LLONG_MAX
         
         // MARK: Pass Argument by reference
         SampleErrorCatchingClass *ecc = [SampleErrorCatchingClass new];
