@@ -24,8 +24,18 @@
 
 - (NSString *)dayOfTheWeek {
     NSCalendar *calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
-    NSLog(@"%ld", (long)[calendar component:NSCalendarUnitWeekday fromDate:self]);
-    return @"";
+    
+    switch ([calendar component:NSCalendarUnitWeekday fromDate:self]) {
+        case 1: return @"Воскресенье";
+        case 2: return @"Понедельник";
+        case 3: return @"Вторник";
+        case 4: return @"Среда";
+        case 5: return @"Четверг";
+        case 6: return @"Пятница";
+        case 7: return @"Суббота";
+
+        default: return @"";
+    }
 }
 
 @end

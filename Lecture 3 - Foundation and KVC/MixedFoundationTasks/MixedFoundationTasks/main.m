@@ -90,7 +90,9 @@ int main(int argc, const char * argv[]) {
         
         // MARK: Weak day for date
         NSLog(@"************** Weak Day for Date **************");
-        [NSDate logWeekDayFor:[NSDate new]];
+        for (int i = 0; i < 7; ++i) {
+            [NSDate logWeekDayFor:[[NSDate alloc] initWithTimeIntervalSinceNow:86400 * i]];
+        }
     }
     
     return 0;

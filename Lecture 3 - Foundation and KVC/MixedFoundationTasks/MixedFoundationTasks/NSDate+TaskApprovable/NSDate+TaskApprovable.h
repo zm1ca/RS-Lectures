@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSDate (TaskApprovable)
 
-@property (nonatomic, readonly) NSString *dayOfTheWeek; //create getter?
+@property (nonatomic, readonly) NSString *dayOfTheWeek;
 
 + (void)logCurrentDate;
 + (void)logWeekDayFor:(NSDate *)date;
