@@ -38,4 +38,15 @@
     }
 }
 
++ (NSUInteger)hoursFromMagicDate {
+    NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
+    NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
+    [dateComponents setDay:17];
+    [dateComponents setMonth:3];
+    [dateComponents setYear:1995];
+    NSDate *magicDate = [calendar dateFromComponents:dateComponents];
+
+    return [[NSDate now] timeIntervalSinceDate:magicDate] / 3600;
+}
+
 @end

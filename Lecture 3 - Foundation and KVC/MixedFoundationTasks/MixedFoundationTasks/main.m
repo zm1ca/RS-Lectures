@@ -84,15 +84,20 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Retrieved string is: %@", retrievedSting);
         
         
-        // MARK: Formatted current date
+        // MARK: - Formatted current date
         NSLog(@"************** Formatted Current Date **************");
         [NSDate logCurrentDate];
         
-        // MARK: Weak day for date
+        
+        // MARK: - Weak day for date
         NSLog(@"************** Weak Day for Date **************");
         for (int i = 0; i < 7; ++i) {
             [NSDate logWeekDayFor:[[NSDate alloc] initWithTimeIntervalSinceNow:86400 * i]];
         }
+        
+        // MARK: - Hours count from magic date
+        NSLog(@"************** Hours count **************");
+        NSLog(@"Hours from magic date: %lu", [NSDate hoursFromMagicDate]);
     }
     
     return 0;
