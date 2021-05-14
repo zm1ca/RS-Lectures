@@ -2,4 +2,5 @@
 ### Fundamentals -- None.
 ### Memory management -- Property Attributes.
 ### Foundation. KVC -- None.
-### Collections -- Remove Duplicates, Insertion Sort.
+### Collections -- Insertion Sort.
+### KVO, Notification Center -- Observe Computed Property, Post Notifications
