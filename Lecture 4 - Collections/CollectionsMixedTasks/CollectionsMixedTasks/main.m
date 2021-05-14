@@ -55,9 +55,13 @@ int main(int argc, const char * argv[]) {
         NSLog(@"String with no duplicates sorted by words: '%@'", [DuplicateWordsRemover removeDuplicateWordsFrom:stringWithDuplicates]);
         
         //MARK: - Insertion Sort
-        NSArray *sampleNSNumbersArray = @[@1, @17, @15, @19, @5, @9, @4, @8, @0];
-        NSLog(@"Original array: %@", sampleNSNumbersArray);
-        NSLog(@"Sorted array: %@", [sampleNSNumbersArray insertionSort]);
+        NSArray *sampleNSNumberArray = @[@1, @17, @15, @19, @5, @9, @4, @8, @0];
+        NSArray *sampleNSStringArray = @[@"zbc", @"fcs", @"acs", @"bbb", @"xxc"];
+        NSArray *samplePersonArray = @[mike, joseph, kate];
+
+        NSLog(@"Sorted NSNumber array: %@", [sampleNSNumberArray insertionSort]);
+        NSLog(@"Sorted NSString array: %@", [sampleNSStringArray insertionSort]);
+        NSLog(@"Sorted Person array: %@", [samplePersonArray insertionSort]);
     }
     return 0;
 }

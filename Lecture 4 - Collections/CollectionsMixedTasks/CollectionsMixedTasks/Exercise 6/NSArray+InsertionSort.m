@@ -10,14 +10,21 @@
 @implementation NSArray (InsertionSort)
 
 - (NSArray *)insertionSort {
-    NSMutableArray *arr = [NSMutableArray arrayWithArray:self];
-    NSNumber *key = [[NSNumber alloc] init];
-    int j;
     
+    NSMutableArray *arr = [NSMutableArray arrayWithArray:self];
+    for (id object in arr) {
+        if (![object respondsToSelector:@selector(compare:)]) {
+            NSLog(@"Detected an uncomparable object.");
+            return nil;
+        }
+    }
+    
+    id key;
+    int j;
     for (int i = 1; i < arr.count; ++i) {
         key = arr[i];
         j = i - 1;
-        while ((j >= 0) && ([arr[j] intValue] > [key intValue])) {
+        while ((j >= 0) && ([arr[j] compare:key] == NSOrderedDescending)) {
             arr[j + 1] = arr[j];
             j--;
         }
