@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		400EF227264E5A7700E6A345 /* ArrayIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 400EF226264E5A7700E6A345 /* ArrayIterator.m */; };
+		40B7B001264E5C3E004F0FB1 /* DataMerger.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7B000264E5C3E004F0FB1 /* DataMerger.m */; };
 		40F4BD0A264D1B1A0039B6D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F4BD09264D1B1A0039B6D6 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		400EF225264E5A7700E6A345 /* ArrayIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayIterator.h; sourceTree = "<group>"; };
 		400EF226264E5A7700E6A345 /* ArrayIterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrayIterator.m; sourceTree = "<group>"; };
+		40B7AFFF264E5C3E004F0FB1 /* DataMerger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataMerger.h; sourceTree = "<group>"; };
+		40B7B000264E5C3E004F0FB1 /* DataMerger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataMerger.m; sourceTree = "<group>"; };
 		40F4BD06264D1B1A0039B6D6 /* CollectionsMixedTasks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CollectionsMixedTasks; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F4BD09264D1B1A0039B6D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +53,15 @@
 			path = "Exercise 1";
 			sourceTree = "<group>";
 		};
+		40B7AFFE264E5C14004F0FB1 /* Exercise 2 */ = {
+			isa = PBXGroup;
+			children = (
+				40B7AFFF264E5C3E004F0FB1 /* DataMerger.h */,
+				40B7B000264E5C3E004F0FB1 /* DataMerger.m */,
+			);
+			path = "Exercise 2";
+			sourceTree = "<group>";
+		};
 		40F4BCFD264D1B1A0039B6D6 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				400EF229264E5A7B00E6A345 /* Exercise 1 */,
+				40B7AFFE264E5C14004F0FB1 /* Exercise 2 */,
 				40F4BD09264D1B1A0039B6D6 /* main.m */,
 			);
 			path = CollectionsMixedTasks;
@@ -133,6 +146,7 @@
 			files = (
 				40F4BD0A264D1B1A0039B6D6 /* main.m in Sources */,
 				400EF227264E5A7700E6A345 /* ArrayIterator.m in Sources */,
+				40B7B001264E5C3E004F0FB1 /* DataMerger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
