@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "ArrayIterator.h"
 #import "DataMerger.h"
+#import "ArrayFilterer.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -23,6 +24,17 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%lu", (unsigned long)[chunkOne length]);
         NSLog(@"%lu", (unsigned long)[chunkTwo length]);
         NSLog(@"%lu", (unsigned long)[mergedChunks length]);
+        
+        //MARK: - Filter Array using NSPredicate
+        NSArray<NSString *> *sampleArray = @[
+            @"",
+            @"aloha",
+            @"Aloha, mate.",
+            @"Nothing to find.",
+            @"hiddenALOHAtext",
+            @"Hawaiian greeting is Aloha"
+        ];
+        NSLog(@"%@", [ArrayFilterer filteredArrayFrom:sampleArray containing:@"aloha"]);
     }
     return 0;
 }
