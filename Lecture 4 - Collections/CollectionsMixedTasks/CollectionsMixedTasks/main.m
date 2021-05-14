@@ -9,6 +9,7 @@
 #import "ArrayIterator.h"
 #import "DataMerger.h"
 #import "ArrayFilterer.h"
+#import "Person.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -35,6 +36,17 @@ int main(int argc, const char * argv[]) {
             @"Hawaiian greeting is Aloha"
         ];
         NSLog(@"%@", [ArrayFilterer filteredArrayFrom:sampleArray containing:@"aloha"]);
+        
+        //MARK: - Person as NSDictionary key
+        Person *mike = [Person personWithFirstName:@"Mike" lastName:@"Phillips"];
+        Person *joseph = [Person personWithFirstName:@"Joseph" lastName:@"Miller"];
+        Person *kate = [Person personWithFirstName:@"Kate" lastName:@"Marlboro"];
+        
+        NSDictionary *personDict = [NSDictionary dictionaryWithObjectsAndKeys:@98, mike, @87, joseph, @13, kate, nil];
+        for (Person* person in [personDict allKeys]) {
+            NSLog(@"%@ %@ passed a test with %d points.", person.firstName, person.lastName, [personDict[person] intValue]);
+        }
+
     }
     return 0;
 }
