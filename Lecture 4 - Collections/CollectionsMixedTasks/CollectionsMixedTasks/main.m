@@ -11,6 +11,7 @@
 #import "ArrayFilterer.h"
 #import "Person.h"
 #import "DuplicateWordsRemover.h"
+#import "NSArray+InsertionSort.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -52,6 +53,11 @@ int main(int argc, const char * argv[]) {
         NSString *stringWithDuplicates = @"Me and Mike and another Mike and Welsey";
         NSLog(@"Original string: %@", stringWithDuplicates);
         NSLog(@"String with no duplicates sorted by words: '%@'", [DuplicateWordsRemover removeDuplicateWordsFrom:stringWithDuplicates]);
+        
+        //MARK: - Insertion Sort
+        NSArray *sampleNSNumbersArray = @[@1, @17, @15, @19, @5, @9, @4, @8, @0];
+        NSLog(@"Original array: %@", sampleNSNumbersArray);
+        NSLog(@"Sorted array: %@", [sampleNSNumbersArray insertionSort]);
     }
     return 0;
 }

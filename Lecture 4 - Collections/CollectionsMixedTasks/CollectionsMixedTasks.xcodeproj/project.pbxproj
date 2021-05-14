@@ -12,6 +12,7 @@
 		40B7B007264E650F004F0FB1 /* ArrayFilterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7B006264E650F004F0FB1 /* ArrayFilterer.m */; };
 		40B7B00E264E6EB9004F0FB1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7B00D264E6EB9004F0FB1 /* Person.m */; };
 		40B7B014264E78D4004F0FB1 /* DuplicateWordsRemover.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7B013264E78D4004F0FB1 /* DuplicateWordsRemover.m */; };
+		40B7B01A264E7DE3004F0FB1 /* NSArray+InsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B7B019264E7DE3004F0FB1 /* NSArray+InsertionSort.m */; };
 		40F4BD0A264D1B1A0039B6D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F4BD09264D1B1A0039B6D6 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		40B7B00D264E6EB9004F0FB1 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		40B7B012264E78D4004F0FB1 /* DuplicateWordsRemover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuplicateWordsRemover.h; sourceTree = "<group>"; };
 		40B7B013264E78D4004F0FB1 /* DuplicateWordsRemover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DuplicateWordsRemover.m; sourceTree = "<group>"; };
+		40B7B018264E7DE3004F0FB1 /* NSArray+InsertionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+InsertionSort.h"; sourceTree = "<group>"; };
+		40B7B019264E7DE3004F0FB1 /* NSArray+InsertionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+InsertionSort.m"; sourceTree = "<group>"; };
 		40F4BD06264D1B1A0039B6D6 /* CollectionsMixedTasks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CollectionsMixedTasks; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F4BD09264D1B1A0039B6D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +101,15 @@
 			path = "Exercise 5";
 			sourceTree = "<group>";
 		};
+		40B7B017264E7DB3004F0FB1 /* Exercise 6 */ = {
+			isa = PBXGroup;
+			children = (
+				40B7B018264E7DE3004F0FB1 /* NSArray+InsertionSort.h */,
+				40B7B019264E7DE3004F0FB1 /* NSArray+InsertionSort.m */,
+			);
+			path = "Exercise 6";
+			sourceTree = "<group>";
+		};
 		40F4BCFD264D1B1A0039B6D6 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +134,7 @@
 				40B7B004264E63E1004F0FB1 /* Exercise 3 */,
 				40B7B00B264E6E91004F0FB1 /* Exercise 4 */,
 				40B7B011264E78AA004F0FB1 /* Exercise 5 */,
+				40B7B017264E7DB3004F0FB1 /* Exercise 6 */,
 				40F4BD09264D1B1A0039B6D6 /* main.m */,
 			);
 			path = CollectionsMixedTasks;
@@ -183,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B7B01A264E7DE3004F0FB1 /* NSArray+InsertionSort.m in Sources */,
 				40B7B014264E78D4004F0FB1 /* DuplicateWordsRemover.m in Sources */,
 				40F4BD0A264D1B1A0039B6D6 /* main.m in Sources */,
 				400EF227264E5A7700E6A345 /* ArrayIterator.m in Sources */,
