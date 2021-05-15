@@ -11,7 +11,12 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        PostAccount *pa = [[PostAccount alloc] initWithFirstName:@"Dzmitry" lastName:@"Fedchanka" streetAddress:@"Kirava, 51-140" locality:@"Minsk" region:@"Bielarus" postalCode:220030];
+        PostAccount *pa = [[PostAccount alloc] initWithFirstName:@"Dzmitry"
+                                                        lastName:@"Fedchanka"
+                                                   streetAddress:@"Kirava, 51-140"
+                                                        locality:@"Minsk"
+                                                          region:@"Bielarus"
+                                                      postalCode:220030];
         
         PostAccountObserver *observer = [PostAccountObserver new];
         [observer registerAsObserverForPostAccount:pa];
@@ -24,6 +29,8 @@ int main(int argc, const char * argv[]) {
         pa.postalCode = 133921;     
         
         [observer stopObservingPostAccount:pa];
+        
+        pa.postalCode = 123456; //not observed anymore
     }
     return 0;
 }
