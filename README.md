@@ -3,4 +3,4 @@
 ### Memory management -- Property Attributes.
 ### Foundation. KVC -- None.
 ### Collections -- None.
-### KVO, Notification Center -- Post Notifications
+### KVO, Notification Center -- None.
