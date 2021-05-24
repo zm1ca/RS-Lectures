@@ -6,13 +6,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WeakReferencer.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSString *str = [NSString stringWithFormat:@"No%d test string", 1];
-        NSLog(@"%@ created", str);
+        WeakReferencer *obj = [WeakReferencer new];
         
-        NSString *literalStr = @"Literal String";
+        @autoreleasepool {
+            NSString *str = [NSString stringWithFormat:@"%d, Test string", 42];
+            [str retain];
+            
+            obj.string = str;
+            [str release];
+            
+            NSLog(@"%s", obj.string != nil ? "exists" : "deallocated");
+        }
+        NSLog(@"%s", obj.string != nil ? "exists" : "deallocated");
     }
+    
     return 0;
 }
